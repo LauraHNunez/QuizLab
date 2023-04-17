@@ -477,9 +477,9 @@ let numeroimagen=0;
 function comprovarResposta(nResposta){
   imageID = numeroimagen;
   if (respostes[nResposta][0] == imageID){
-       document.getElementById("pregunta").innerHTML = "Correcto" + numeroimagen;  
+       document.getElementById("pregunta").innerHTML = "Correcto " + numeroimagen;  
   }else{
-      document.getElementById("pregunta").innerHTML = "Incorrecto" + numeroimagen;  
+      document.getElementById("pregunta").innerHTML = "Incorrecto " + numeroimagen+" "+respostes[nResposta][0];  
   }
 }
 
