@@ -39,7 +39,7 @@ let imageID = ""
 
 
 function comprovarResposta(nResposta){
-  imageID = numeroimagen
+  imageID = numeroimagen;
   if (respostes[nResposta][0] == imageID){
        document.getElementById("pregunta").innerHTML = "Correcto";  
   }else{
