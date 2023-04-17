@@ -59,7 +59,7 @@ function start(){
   var x = document.getElementById("splash");
   x.style.display = "none";
   preguntas.forEach(e =>{e[2];})
-  document.getElementById("pregunta").innerHTML = preguntas[ferPregunta()]
+  document.getElementById("pregunta").innerHTML = preguntas[ferPregunta(),2]
 }
 setTimeout(start, 3000)
 
