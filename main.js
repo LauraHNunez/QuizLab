@@ -1,6 +1,7 @@
 let numeroPregunta = 0;
 
 let preguntas = [
+//  ID    NOMBRE    PREGUNTA                DESCRIPCION
     [0, "image0", "Matràs aforat 100 ml", "Generalment s'utilitza per a preparar solucions de concentració coneguda. Solen fabricar-se amb materials de vidre. Té una capacitat de 100 ml"],
     [1, "image1", "Matràs aforat 250 ml", "Generalment s'utilitza per a preparar solucions de concentració coneguda. Solen fabricar-se amb materials de vidre. Té una capacitat de 250 ml"],
     [2, "image2", "Matràs aforat 500 ml", "Generalment s'utilitza per a preparar solucions de concentració coneguda. Solen fabricar-se amb materials de vidre. Té una capacitat de 500 ml"],
@@ -32,13 +33,14 @@ let preguntas = [
     [28, "image28", "Vidre de rellotge 80 mm diàm.", "que s'utilitza per mesurar la massa o el pes de productes sòlids. Té un diàmetre de 80 mm"],
     [29, "image29", "Vidre de rellotge 100 mm diàm.", "que s'utilitza per mesurar la massa o el pes de productes sòlids. Té un diàmetre de 100 mm"]
 ];
-
+let showButton = false
 let respostes = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29]
+let imageID = ""
 
 
 function comprovarResposta(nResposta){
-  if (respostes[nResposta] == nResposta){
-      
+  if (respostes[nResposta][0] == imageID){
+        document.getElementById("pregunta").innerHTML = "Correcto";  
   }
 }
 
@@ -46,11 +48,13 @@ function comprovarResposta(nResposta){
 function tomarId(){
   const alter = document.getElementById();
   const zimage = alter.getAttribute("id");
+  imageID = zimage
   document.getElementById("pregunta").innerHTML = zimage;
+  
 }
 
 function ferPregunta(){
-  numeroPregunta = Math.floor(Math.random() * 46);
+  numeroPregunta = Math.floor(Math.random() * 29);
   return numeroPregunta;
 }
 
