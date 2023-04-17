@@ -48,10 +48,9 @@ function comprovarResposta(nResposta){
 
 
 function tomarId(){
-  const alter = document.getElementById();
-  const zimage = alter.getAttribute("id");
+
   imageID = numeroimagen
-  document.getElementById("pregunta").innerHTML = zimage;
+  document.getElementById("pregunta").innerHTML = imageID;
   
 }
 
