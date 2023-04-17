@@ -36,7 +36,443 @@ let preguntas = [
 let showButton = false
 let respostes = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29]
 let imageID = ""
+// farem servir aquesta variable per saber la darrera imatge carregada
+let numeroimagen=0;
+      
+      AFRAME.registerComponent('markerhandler0', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca0").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=0;
+               console.log(numeroimagen);
+            }
+          }
+        });
+  
+      
+      AFRAME.registerComponent('markerhandler1', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca1").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=1;
+               console.log(numeroimagen);
+            }
+          }
+        });
+      
+      
+      AFRAME.registerComponent('markerhandler2', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca2").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=2;
+               console.log(numeroimagen);
+            }
+          }
+        });
 
+     
+       AFRAME.registerComponent('markerhandler3', {
+          init: function() {
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca3").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=3;
+               console.log(numeroimagen);
+              }
+          }
+        });
+
+      AFRAME.registerComponent('markerhandler4', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca4").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=4;
+               console.log(numeroimagen);
+            }
+          }
+        });
+  
+      
+      AFRAME.registerComponent('markerhandler5', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca5").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=5;
+               console.log(numeroimagen);
+            }
+          }
+        });
+      
+      
+      AFRAME.registerComponent('markerhandler6', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca6").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=6;
+               console.log(numeroimagen);
+            }
+          }
+        });
+
+     
+       AFRAME.registerComponent('markerhandler7', {
+          init: function() {
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca7").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=7;
+               console.log(numeroimagen);
+              }
+          }
+        }); 
+      
+      AFRAME.registerComponent('markerhandler8', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca8").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=8;
+               console.log(numeroimagen);
+            }
+          }
+        });
+  
+      
+      AFRAME.registerComponent('markerhandler9', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca9").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=9;
+               console.log(numeroimagen);
+            }
+          }
+        });
+      
+      
+      AFRAME.registerComponent('markerhandler10', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca10").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=10;
+               console.log(numeroimagen);
+            }
+          }
+        });
+
+     
+       AFRAME.registerComponent('markerhandler11', {
+          init: function() {
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca11").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=11;
+               console.log(numeroimagen);
+              }
+          }
+        });
+   
+      AFRAME.registerComponent('markerhandler12', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca12").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=12;
+               console.log(numeroimagen);
+            }
+          }
+        });
+  
+      
+      AFRAME.registerComponent('markerhandler13', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca13").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=13;
+               console.log(numeroimagen);
+            }
+          }
+        });
+      
+      
+      AFRAME.registerComponent('markerhandler14', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca14").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=14;
+               console.log(numeroimagen);
+            }
+          }
+        });
+
+     
+       AFRAME.registerComponent('markerhandler15', {
+          init: function() {
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca15").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=15;
+               console.log(numeroimagen);
+              }
+          }
+        });
+      
+      AFRAME.registerComponent('markerhandler16', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca16").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=16;
+               console.log(numeroimagen);
+            }
+          }
+        });
+  
+      
+      AFRAME.registerComponent('markerhandler17', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca17").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=17;
+               console.log(numeroimagen);
+            }
+          }
+        });
+      
+      
+      AFRAME.registerComponent('markerhandler18', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca18").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=18;
+               console.log(numeroimagen);
+            }
+          }
+        });
+
+     
+       AFRAME.registerComponent('markerhandler19', {
+          init: function() {
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca19").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=19;
+               console.log(numeroimagen);
+              }
+          }
+        });
+      
+      AFRAME.registerComponent('markerhandler20', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca20").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=20;
+               console.log(numeroimagen);
+            }
+          }
+        });
+  
+      
+      AFRAME.registerComponent('markerhandler21', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca21").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=21;
+               console.log(numeroimagen);
+            }
+          }
+        });
+      
+      
+      AFRAME.registerComponent('markerhandler22', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca22").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=22;
+               console.log(numeroimagen);
+            }
+          }
+        });
+
+     
+       AFRAME.registerComponent('markerhandler23', {
+          init: function() {
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca23").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=23;
+               console.log(numeroimagen);
+              }
+          }
+        });
+      
+      AFRAME.registerComponent('markerhandler24', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca24").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=24;
+               console.log(numeroimagen);
+            }
+          }
+        });
+  
+      
+      AFRAME.registerComponent('markerhandler25', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca25").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=25;
+               console.log(numeroimagen);
+            }
+          }
+        });
+      
+      
+      AFRAME.registerComponent('markerhandler26', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca26").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=26;
+               console.log(numeroimagen);
+            }
+          }
+        });
+
+     
+       AFRAME.registerComponent('markerhandler27', {
+          init: function() {
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca27").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=27;
+               console.log(numeroimagen);
+              }
+          }
+        });
+      
+      AFRAME.registerComponent('markerhandler28', {
+          init: function() {
+            // Set up the tick throttling. Will check if marker is active every 500ms
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca28").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=28;
+               console.log(numeroimagen);
+            }
+          }
+        });
+
+     
+       AFRAME.registerComponent('markerhandler29', {
+          init: function() {
+            this.tick = AFRAME.utils.throttleTick(this.tick, 100, this);
+          },
+          tick: function(t, dt) {
+            if (document.querySelector("#marca29").object3D.visible == true) {
+              // MARKER IS PRESENT
+               numeroimagen=29;
+               console.log(numeroimagen);
+              }
+          }
+        });
+      
 
 function comprovarResposta(nResposta){
   imageID = numeroimagen;
