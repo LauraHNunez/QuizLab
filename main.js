@@ -50,7 +50,7 @@ function comprovarResposta(nResposta){
 function tomarId(){
   const alter = document.getElementById();
   const zimage = alter.getAttribute("id");
-  imageID = zimage
+  imageID = numeroimagen
   document.getElementById("pregunta").innerHTML = zimage;
   
 }
