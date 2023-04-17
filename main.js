@@ -476,10 +476,10 @@ let numeroimagen=0;
 
 function comprovarResposta(nResposta){
   imageID = numeroimagen;
-  if (respostes[nResposta][0] == imageID){
+  if (preguntas[nResposta][0] == imageID){
        document.getElementById("pregunta").innerHTML = "Correcto " + numeroimagen;  
   }else{
-      document.getElementById("pregunta").innerHTML = "Incorrecto " + numeroimagen+" "+respostes[nResposta][0];  
+      document.getElementById("pregunta").innerHTML = "Incorrecto " + numeroimagen+" "+preguntas[nResposta][0];  
   }
 }
 
