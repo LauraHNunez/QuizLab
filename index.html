@@ -22,21 +22,21 @@
     
       <a-assets>
             <img id="card0" src="IMAGENES/i0.jpg" /> <!-- Matràs aforat 100mL -->
-            <img id="card3" src="IMAGENES/i3.jpg" /><!-- Micropipeta 20-200 uL-->
-            <img id="card6" src="IMAGENES/i6.jpg" /> <!--Bureta 25 mL -->
-            <img id="card7" src="IMAGENES/i7.jpg"  alt="01" /> <!--Proveta 100 mL -->
-            <img id="card8" src="IMAGENES/i8.jpg" /> <!--Vas de precipitat 50 mL -->
-            <img id="card11" src="IMAGENES/i11.jpg" /><!-- Matràs Erlenmeyer vidre 100 mL -->
-            <img id="card13" src="IMAGENES/i13.jpg" /> <!-- Matràs Kitasato vidre 250 mL -->
-            <img id="card14" src="IMAGENES/i14.jpg" /> <!-- Embut de 75 mm -->
-            <img id="card16" src="IMAGENES/i16.jpg"  alt="03" /><!--Morter de porcellana  -->
-            <img id="card17" src="IMAGENES/i17.jpg" /><!--Morter de vidre-->
-            <img id="card18" src="IMAGENES/i18.jpg" /><!--Pipeta aforada 5 mL -->
-            <img id="card21" src="IMAGENES/i21.jpg" /> <!--Pipeta graduada 5 mL -->
-            <img id="card24" src="IMAGENES/i24.jpg" /> <!--Tub d'assaig -->
-            <img id="card25" src="IMAGENES/i25.jpg" /> <!-- Termòmetre -->
-            <img id="card26" src="IMAGENES/i26.jpg" /> <!-- Càpsula de porcellana 60 mL -->
-            <img id="card28" src="IMAGENES/i28.jpg" /><!--Vidre de rellotge 80 mm diàm -->
+            <img id="card1" src="IMAGENES/i1.jpg" /><!-- Micropipeta 20-200 uL-->
+            <img id="card2" src="IMAGENES/i2.jpg" /> <!--Bureta 25 mL -->
+            <img id="card3" src="IMAGENES/i3.jpg"  alt="01" /> <!--Proveta 100 mL -->
+            <img id="card4" src="IMAGENES/i4.jpg" /> <!--Vas de precipitat 50 mL -->
+            <img id="card5" src="IMAGENES/i5.jpg" /><!-- Matràs Erlenmeyer vidre 100 mL -->
+            <img id="card6" src="IMAGENES/i6.jpg" /> <!-- Matràs Kitasato vidre 250 mL -->
+            <img id="card7" src="IMAGENES/i7.jpg" /> <!-- Embut de 75 mm -->
+            <img id="card8" src="IMAGENES/i8.jpg"  alt="03" /><!--Morter de porcellana  -->
+            <img id="card9" src="IMAGENES/i9.jpg" /><!--Morter de vidre-->
+            <img id="card10" src="IMAGENES/i10.jpg" /><!--Pipeta aforada 5 mL -->
+            <img id="card11" src="IMAGENES/i11.jpg" /> <!--Pipeta graduada 5 mL -->
+            <img id="card12" src="IMAGENES/i12.jpg" /> <!--Tub d'assaig -->
+            <img id="card13" src="IMAGENES/i13.jpg" /> <!-- Termòmetre -->
+            <img id="card14" src="IMAGENES/i14.jpg" /> <!-- Càpsula de porcellana 60 mL -->
+            <img id="card15" src="IMAGENES/i15.jpg" /><!--Vidre de rellotge 80 mm diàm -->
             
         </a-assets>
 
@@ -51,33 +51,66 @@
         </a-entity>
    
         <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  IMATGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-        <a-entity mindar-image-target="targetIndex: 3" id ="marca3" markerhandler3>
+        <a-entity mindar-image-target="targetIndex: 1" id ="marca1" markerhandler1>
             <!--imatge disparadora noi al ordinador -->
             <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
-            <a-plane id="image3" src="#card3" position="0 0 0" height="3.00" width="3.00" ></a-plane> 
-          <button id="button3" onclick="comprovarResposta(3)">Acceptar</button>
+            <a-plane id="image1" src="#card1" position="0 0 0" height="3.00" width="3.00" ></a-plane> 
+          <button id="button1" onclick="comprovarResposta(1)">Acceptar</button>
         </a-entity>
       
       
         
         <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  IMATGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-        <a-entity mindar-image-target="targetIndex: 6" id ="marca6" markerhandler6>
+        <a-entity mindar-image-target="targetIndex: 2" id ="marca2" markerhandler2>
             <!--imatge disparadora noi al ordinador -->
             <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
-            <a-plane id="image6" src="#card6" position="0 0 0" height="3.00" width="3.00" ></a-plane>   
-          <button id="button6" onclick="comprovarResposta(6)">Acceptar</button>
+            <a-plane id="image2" src="#card2" position="0 0 0" height="3.00" width="3.00" ></a-plane>   
+          <button id="button2" onclick="comprovarResposta(2)">Acceptar</button>
         </a-entity>
     
         
         <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  IMATGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-        <a-entity mindar-image-target="targetIndex: 7" id ="marca7" markerhandler7>
+        <a-entity mindar-image-target="targetIndex: 3" id ="marca3" markerhandler3>
             <!--imatge disparadora noi al ordinador -->
             <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
-            <a-plane id="image7" src="#card7" position="0 0 0" height="3.00" width="3.00"></a-plane> 
-          <button id="button7" onclick="comprovarResposta(7)">Acceptar</button>
+            <a-plane id="image3" src="#card3" position="0 0 0" height="3.00" width="3.00"></a-plane> 
+          <button id="button3" onclick="comprovarResposta(3)">Acceptar</button>
         </a-entity>
       
       <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  IMATGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+        <a-entity mindar-image-target="targetIndex: 4" id ="marca4" markerhandler4>
+            <!--imatge disparadora noi al ordinador -->
+            <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
+            <a-plane id="image4" src="#card4" position="0 0 0" height="3.00" width="3.00" ></a-plane>   
+          <button id="button4" onclick="comprovarResposta(4)">Acceptar</button>
+        </a-entity>
+    
+                 
+        <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  IMATGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+        <a-entity mindar-image-target="targetIndex: 5" id ="marca5" markerhandler5>
+            <!--imatge disparadora noi al ordinador -->
+            <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
+            <a-plane id="image5" src="#card5" position="0 0 0" height="3.00" width="3.00"  ></a-plane>   
+          <button id="button5" onclick="comprovarResposta(5)">Acceptar</button>
+        </a-entity>
+   
+        <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  IMATGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+        <a-entity mindar-image-target="targetIndex: 6" id ="marca6" markerhandler6>
+            <!--imatge disparadora noi al ordinador -->
+            <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
+            <a-plane id="image6" src="#card7" position="0 0 0" height="3.00" width="3.00" ></a-plane> 
+          <button id="button6" onclick="comprovarResposta(6)">Acceptar</button>
+        </a-entity>
+      
+      <a-entity mindar-image-target="targetIndex: 7" id ="marca7" markerhandler7>
+            <!--imatge disparadora noi al ordinador -->
+            <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
+            <a-plane id="image7" src="#card7" position="0 0 0" height="3.00" width="3.00"></a-plane>
+          <button id="button7" onclick="comprovarResposta(7)">Acceptar</button>
+        </a-entity>
+   
+    
+        <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  IMATGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
         <a-entity mindar-image-target="targetIndex: 8" id ="marca8" markerhandler8>
             <!--imatge disparadora noi al ordinador -->
             <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
@@ -85,104 +118,67 @@
           <button id="button8" onclick="comprovarResposta(8)">Acceptar</button>
         </a-entity>
     
-                 
+        
         <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  IMATGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+        <a-entity mindar-image-target="targetIndex: 9" id ="marca9" markerhandler9>
+            <!--imatge disparadora noi al ordinador -->
+            <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
+            <a-plane id="image9" src="#card9" position="0 0 0" height="3.00" width="3.00"></a-plane> 
+          <button id="button9" onclick="comprovarResposta(9)">Acceptar</button>
+        </a-entity>
+      
+      <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  IMATGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+        <a-entity mindar-image-target="targetIndex: 10" id ="marca10" markerhandler10>
+            <!--imatge disparadora noi al ordinador -->
+            <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
+            <a-plane id="image10" src="#card10" position="0 0 0" height="3.00" width="3.00"></a-plane>   
+          <button id="button10" onclick="comprovarResposta(10)">Acceptar</button>
+        </a-entity>
+    
+      <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  IMATGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
         <a-entity mindar-image-target="targetIndex: 11" id ="marca11" markerhandler11>
             <!--imatge disparadora noi al ordinador -->
             <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
             <a-plane id="image11" src="#card11" position="0 0 0" height="3.00" width="3.00"  ></a-plane>   
           <button id="button11" onclick="comprovarResposta(11)">Acceptar</button>
         </a-entity>
-   
+    
+        
+
+      <a-entity mindar-image-target="targetIndex: 12" id ="marca12" markerhandler12>
+            <!--imatge disparadora noi a l'ordinador -->
+            <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
+            <a-plane id="image12" src="#card12" position="0 0 0" height="3.00" width="3.00" ></a-plane>
+          <button id="button12" onclick="comprovarResposta(12)">Acceptar</button>
+        </a-entity>
+    
+           
         <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  IMATGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
         <a-entity mindar-image-target="targetIndex: 13" id ="marca13" markerhandler13>
             <!--imatge disparadora noi al ordinador -->
             <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
-            <a-plane id="image13" src="#card13" position="0 0 0" height="3.00" width="3.00" ></a-plane> 
+            <a-plane id="image13" src="#card25" position="0 0 0" height="3.00" width="3.00"></a-plane>   
           <button id="button13" onclick="comprovarResposta(13)">Acceptar</button>
         </a-entity>
-      
-      <a-entity mindar-image-target="targetIndex: 14" id ="marca14" markerhandler14>
-            <!--imatge disparadora noi al ordinador -->
-            <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
-            <a-plane id="image14" src="#card14" position="0 0 0" height="3.00" width="3.00"></a-plane>
-          <button id="button14" onclick="comprovarResposta(15)">Acceptar</button>
-        </a-entity>
-    
-           
-    
-        <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  IMATGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-        <a-entity mindar-image-target="targetIndex: 16" id ="marca16" markerhandler16>
-            <!--imatge disparadora noi al ordinador -->
-            <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
-            <a-plane id="image16" src="#card16" position="0 0 0" height="3.00" width="3.00" ></a-plane>   
-          <button id="button16" onclick="comprovarResposta(16)">Acceptar</button>
-        </a-entity>
     
         
         <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  IMATGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-        <a-entity mindar-image-target="targetIndex: 17" id ="marca17" markerhandler17>
+        <a-entity mindar-image-target="targetIndex: 14" id ="marca14" markerhandler14>
             <!--imatge disparadora noi al ordinador -->
             <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
-            <a-plane id="image17" src="#card17" position="0 0 0" height="3.00" width="3.00"></a-plane> 
-          <button id="button17" onclick="comprovarResposta(17)">Acceptar</button>
-        </a-entity>
-      
-      <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  IMATGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-        <a-entity mindar-image-target="targetIndex: 18" id ="marca18" markerhandler18>
-            <!--imatge disparadora noi al ordinador -->
-            <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
-            <a-plane id="image18" src="#card18" position="0 0 0" height="3.00" width="3.00"></a-plane>   
-          <button id="button18" onclick="comprovarResposta(18)">Acceptar</button>
-        </a-entity>
-    
-        
-   
-           
-        <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  IMATGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-        <a-entity mindar-image-target="targetIndex: 21" id ="marca21" markerhandler21>
-            <!--imatge disparadora noi al ordinador -->
-            <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
-            <a-plane id="image21" src="#card1" position="0 0 0" height="3.00" width="3.00"  ></a-plane>   
-          <button id="button21" onclick="comprovarResposta(21)">Acceptar</button>
-        </a-entity>
-    
-        
-
-      <a-entity mindar-image-target="targetIndex: 24" id ="marca24" markerhandler24>
-            <!--imatge disparadora noi a l'ordinador -->
-            <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
-            <a-plane id="image24" src="#card24" position="0 0 0" height="3.00" width="3.00" ></a-plane>
-          <button id="button24" onclick="comprovarResposta(24)">Acceptar</button>
-        </a-entity>
-    
-           
-        <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  IMATGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-        <a-entity mindar-image-target="targetIndex: 25" id ="marca25" markerhandler25>
-            <!--imatge disparadora noi al ordinador -->
-            <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
-            <a-plane id="image25" src="#card25" position="0 0 0" height="3.00" width="3.00"></a-plane>   
-          <button id="button25" onclick="comprovarResposta(25)">Acceptar</button>
-        </a-entity>
-    
-        
-        <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  IMATGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-        <a-entity mindar-image-target="targetIndex: 26" id ="marca26" markerhandler26>
-            <!--imatge disparadora noi al ordinador -->
-            <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
-            <a-plane id="image26" src="#card26" position="0 0 0" height="3.00" width="3.00" ></a-plane>   
-          <button id="button26" onclick="comprovarResposta(26)">Acceptar</button>
+            <a-plane id="image14" src="#card14" position="0 0 0" height="3.00" width="3.00" ></a-plane>   
+          <button id="button14" onclick="comprovarResposta(14)">Acceptar</button>
         </a-entity>
     
         
   
       
       <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  IMATGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-        <a-entity mindar-image-target="targetIndex: 28" id ="marca28" markerhandler28>
+        <a-entity mindar-image-target="targetIndex: 15" id ="marca15" markerhandler15>
             <!--imatge disparadora noi a l'ordinador -->
             <!-- Height i width a adapatar al tamany de la imatge disparadora. Les dues imatges han de tenir dimensions proporcionals -->
-            <a-plane id="image28" src="#card28" position="0 0 0" height="3.00" width="3.00" ></a-plane>   
-          <button id="button28" onclick="comprovarResposta(28)">Acceptar</button>
+            <a-plane id="image15" src="#card15" position="0 0 0" height="3.00" width="3.00" ></a-plane>   
+          <button id="button15" onclick="comprovarResposta(15)">Acceptar</button>
         </a-entity>
     
         
