@@ -41,9 +41,9 @@ let imageID = ""
 function comprovarResposta(nResposta){
   imageID = numeroimagen;
   if (respostes[nResposta][0] == imageID){
-       document.getElementById("pregunta").innerHTML = "Correcto";  
+       document.getElementById("pregunta").innerHTML = "Correcto" + numeroimagen;  
   }else{
-      document.getElementById("pregunta").innerHTML = "Incorrecto";  
+      document.getElementById("pregunta").innerHTML = "Incorrecto" + numeroimagen;  
   }
 }
 
