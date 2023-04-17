@@ -279,7 +279,7 @@ function tomarId(){
 }
 
 function ferPregunta(){
-  numeroPregunta = Math.floor(Math.random() * 16);
+  numeroPregunta = Math.floor(Math.random() * 15);
   return numeroPregunta;
 }
 
