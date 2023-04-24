@@ -37,7 +37,6 @@ let numeroimagen=0;
                console.log(numeroimagen);
             }
           }
-         
         });
   
       
