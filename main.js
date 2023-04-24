@@ -255,7 +255,7 @@ let numeroimagen=0;
     
       
 function comprovarResposta(nResposta){
-  reposta = nResposta
+  reposta = 2
   imageID = numeroimagen;
     tomarId()
     console.log("nResposta"+reposta);
