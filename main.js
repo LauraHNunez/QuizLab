@@ -37,6 +37,8 @@ let numeroimagen=0;
                console.log(numeroimagen);
             }
           }
+          
+            document.getElementById("IDIMG").innerHTML = imageID;
         });
   
       
