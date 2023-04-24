@@ -38,7 +38,7 @@ let numeroimagen=0;
             }
           }
           
-            document.getElementById("IDIMG").innerHTML = imageID;
+            document.getElementById("IDIMG").innerHTML = numeroimagen;
         });
   
       
