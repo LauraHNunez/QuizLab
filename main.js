@@ -258,7 +258,7 @@ function comprovarResposta(nResposta){
   resposta=nResposta;
   imageID = numeroimagen;
     console.log("nResposta"+reposta);
-  if (preguntas[reposta][0] == imageID){
+  if (resposta == imageID){
        document.getElementById("pregunta").innerHTML = "Correcto " + numeroimagen;  
   }else{
       document.getElementById("pregunta").innerHTML = "Incorrecto " + numeroimagen;  
