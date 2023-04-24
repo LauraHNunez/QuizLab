@@ -265,6 +265,18 @@ function comprovarResposta(nResposta){
       document.getElementById("pregunta").innerHTML = "Incorrecto " + numeroimagen+" "+preguntas[reposta][0];  
   }
 }
+function comprovarResposta0(){
+  reposta = 0
+  imageID = numeroimagen;
+    tomarId()
+    console.log("nResposta"+reposta);
+  if (preguntas[reposta][0] == imageID){
+       document.getElementById("pregunta").innerHTML = "Correcto " + numeroimagen;  
+  }else{
+      document.getElementById("pregunta").innerHTML = "Incorrecto " + numeroimagen+" "+preguntas[reposta][0];  
+  }
+}
+
 function tomarId(){
   imageID = numeroimagen
   document.getElementById("IDIMG").innerHTML = imageID;
