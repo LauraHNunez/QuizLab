@@ -279,4 +279,4 @@ function start(){
   preguntas.forEach(e =>{e[2];})
   document.getElementById("pregunta").innerHTML = preguntas[ferPregunta()][2]
 }
-setTimeout(start, 1000)
+setTimeout(start, 6000)
