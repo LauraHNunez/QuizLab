@@ -275,13 +275,14 @@ let numeroimagen=0;
 function comprovarResposta(nResposta){
   var resposta=nResposta;
   imageID = numeroimagen;
-   console.log("nResposta"+resposta);
+   console.log("NumeroImagen"+imageID);
+   console.log("NumeroPregunta"+respostes[resposta][0])
   if (respostes[resposta] == (""+imageID)){
        document.getElementById("pregunta").innerHTML = "Correcto " + numeroimagen;  
-        console.log("Exito")
+       console.log("Exito")
   }else{
       document.getElementById("pregunta").innerHTML = "Incorrecto " + numeroimagen;    
-        console.log("Fracaso")
+      console.log("Fracaso")
   }
 }
 
