@@ -38,6 +38,7 @@ let numeroimagen=0;
                console.log(numeroimagen);
             }
           }
+          comprovarResposta(numeroimagen)
         });
   
       
@@ -53,6 +54,7 @@ let numeroimagen=0;
                console.log(numeroimagen);
             }
           }
+          comprovarResposta(numeroimagen)
         });
       
       
@@ -68,6 +70,7 @@ let numeroimagen=0;
                console.log(numeroimagen);
             }
           }
+          comprovarResposta(numeroimagen)
         });
      
        AFRAME.registerComponent('markerhandler3', {
@@ -81,6 +84,7 @@ let numeroimagen=0;
                console.log(numeroimagen);
               }
           }
+          comprovarResposta(numeroimagen)
         });
       AFRAME.registerComponent('markerhandler4', {
           init: function() {
@@ -94,6 +98,7 @@ let numeroimagen=0;
                console.log(numeroimagen);
             }
           }
+          comprovarResposta(numeroimagen)
         });
   
       
@@ -109,6 +114,7 @@ let numeroimagen=0;
                console.log(numeroimagen);
             }
           }
+          comprovarResposta(numeroimagen)
         });
       
       
@@ -124,6 +130,7 @@ let numeroimagen=0;
                console.log(numeroimagen);
             }
           }
+          comprovarResposta(numeroimagen)
         });
      
        AFRAME.registerComponent('markerhandler7', {
@@ -137,6 +144,7 @@ let numeroimagen=0;
                console.log(numeroimagen);
               }
           }
+          comprovarResposta(numeroimagen)
         }); 
       
       AFRAME.registerComponent('markerhandler8', {
@@ -151,6 +159,7 @@ let numeroimagen=0;
                console.log(numeroimagen);
             }
           }
+          comprovarResposta(numeroimagen)
         });
   
       
@@ -166,6 +175,7 @@ let numeroimagen=0;
                console.log(numeroimagen);
             }
           }
+          comprovarResposta(numeroimagen)
         });
       
       
@@ -181,6 +191,7 @@ let numeroimagen=0;
                console.log(numeroimagen);
             }
           }
+          comprovarResposta(numeroimagen)
         });
      
        AFRAME.registerComponent('markerhandler11', {
@@ -194,6 +205,7 @@ let numeroimagen=0;
                console.log(numeroimagen);
               }
           }
+          comprovarResposta(numeroimagen)
         });
    
       AFRAME.registerComponent('markerhandler12', {
@@ -208,6 +220,7 @@ let numeroimagen=0;
                console.log(numeroimagen);
             }
           }
+          comprovarResposta(numeroimagen)
         });
   
       
@@ -223,6 +236,7 @@ let numeroimagen=0;
                console.log(numeroimagen);
             }
           }
+          comprovarResposta(numeroimagen)
         });
       
       
@@ -238,6 +252,7 @@ let numeroimagen=0;
                console.log(numeroimagen);
             }
           }
+          comprovarResposta(numeroimagen)
         });
      
        AFRAME.registerComponent('markerhandler15', {
@@ -251,6 +266,7 @@ let numeroimagen=0;
                console.log(numeroimagen);
               }
           }
+          comprovarResposta(numeroimagen)
         });
       
     
@@ -258,11 +274,13 @@ let numeroimagen=0;
 function comprovarResposta(nResposta){
   var resposta=nResposta;
   imageID = numeroimagen;
-    console.log("nResposta"+resposta);
+   console.log("nResposta"+resposta);
   if (respostes[resposta] == (""+imageID)){
        document.getElementById("pregunta").innerHTML = "Correcto " + numeroimagen;  
+        console.log("Exito")
   }else{
-      document.getElementById("pregunta").innerHTML = "Incorrecto " + numeroimagen;  
+      document.getElementById("pregunta").innerHTML = "Incorrecto " + numeroimagen;    
+        console.log("Fracaso")
   }
 }
 
