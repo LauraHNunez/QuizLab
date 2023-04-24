@@ -22,7 +22,7 @@ let preguntas = [
 let showButton = false
 let respostes = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 let imageID = ""
-let resposta = ""
+let resposta = 0
 // farem servir aquesta variable per saber la darrera imatge carregada
 let numeroimagen=0;
       
