@@ -36,9 +36,10 @@ let numeroimagen=0;
               // MARKER IS PRESENT
                numeroimagen=0;
                console.log(numeroimagen);
+               comprovarResposta(numeroimagen);
+                
             }
           }
-          comprovarResposta(numeroimagen)
         });
   
       
@@ -52,9 +53,9 @@ let numeroimagen=0;
               // MARKER IS PRESENT
                numeroimagen=1;
                console.log(numeroimagen);
+               comprovarResposta(numeroimagen);
             }
           }
-          comprovarResposta(numeroimagen)
         });
       
       
@@ -68,9 +69,9 @@ let numeroimagen=0;
               // MARKER IS PRESENT
                numeroimagen=2;
                console.log(numeroimagen);
+               comprovarResposta(numeroimagen);
             }
           }
-          comprovarResposta(numeroimagen)
         });
      
        AFRAME.registerComponent('markerhandler3', {
@@ -82,9 +83,9 @@ let numeroimagen=0;
               // MARKER IS PRESENT
                numeroimagen=3;
                console.log(numeroimagen);
+               comprovarResposta(numeroimagen);
               }
           }
-          comprovarResposta(numeroimagen)
         });
       AFRAME.registerComponent('markerhandler4', {
           init: function() {
@@ -96,9 +97,9 @@ let numeroimagen=0;
               // MARKER IS PRESENT
                numeroimagen=4;
                console.log(numeroimagen);
+               comprovarResposta(numeroimagen);
             }
           }
-          comprovarResposta(numeroimagen)
         });
   
       
@@ -112,9 +113,9 @@ let numeroimagen=0;
               // MARKER IS PRESENT
                numeroimagen=5;
                console.log(numeroimagen);
+               comprovarResposta(numeroimagen);
             }
           }
-          comprovarResposta(numeroimagen)
         });
       
       
@@ -128,9 +129,9 @@ let numeroimagen=0;
               // MARKER IS PRESENT
                numeroimagen=6;
                console.log(numeroimagen);
+               comprovarResposta(numeroimagen);
             }
           }
-          comprovarResposta(numeroimagen)
         });
      
        AFRAME.registerComponent('markerhandler7', {
@@ -142,9 +143,9 @@ let numeroimagen=0;
               // MARKER IS PRESENT
                numeroimagen=7;
                console.log(numeroimagen);
+               comprovarResposta(numeroimagen);
               }
           }
-          comprovarResposta(numeroimagen)
         }); 
       
       AFRAME.registerComponent('markerhandler8', {
@@ -157,9 +158,9 @@ let numeroimagen=0;
               // MARKER IS PRESENT
                numeroimagen=8;
                console.log(numeroimagen);
+               comprovarResposta(numeroimagen);
             }
           }
-          comprovarResposta(numeroimagen)
         });
   
       
@@ -173,9 +174,9 @@ let numeroimagen=0;
               // MARKER IS PRESENT
                numeroimagen=9;
                console.log(numeroimagen);
+               comprovarResposta(numeroimagen);
             }
           }
-          comprovarResposta(numeroimagen)
         });
       
       
@@ -189,9 +190,9 @@ let numeroimagen=0;
               // MARKER IS PRESENT
                numeroimagen=10;
                console.log(numeroimagen);
+               comprovarResposta(numeroimagen);
             }
           }
-          comprovarResposta(numeroimagen)
         });
      
        AFRAME.registerComponent('markerhandler11', {
@@ -203,9 +204,9 @@ let numeroimagen=0;
               // MARKER IS PRESENT
                numeroimagen=11;
                console.log(numeroimagen);
+               comprovarResposta(numeroimagen);
               }
           }
-          comprovarResposta(numeroimagen)
         });
    
       AFRAME.registerComponent('markerhandler12', {
@@ -218,9 +219,9 @@ let numeroimagen=0;
               // MARKER IS PRESENT
                numeroimagen=12;
                console.log(numeroimagen);
+               comprovarResposta(numeroimagen);
             }
           }
-          comprovarResposta(numeroimagen)
         });
   
       
@@ -234,9 +235,9 @@ let numeroimagen=0;
               // MARKER IS PRESENT
                numeroimagen=13;
                console.log(numeroimagen);
+               comprovarResposta(numeroimagen);
             }
           }
-          comprovarResposta(numeroimagen)
         });
       
       
@@ -250,9 +251,9 @@ let numeroimagen=0;
               // MARKER IS PRESENT
                numeroimagen=14;
                console.log(numeroimagen);
+               comprovarResposta(numeroimagen);
             }
           }
-          comprovarResposta(numeroimagen)
         });
      
        AFRAME.registerComponent('markerhandler15', {
@@ -264,9 +265,9 @@ let numeroimagen=0;
               // MARKER IS PRESENT
                numeroimagen=15;
                console.log(numeroimagen);
+               comprovarResposta(numeroimagen);
               }
           }
-          comprovarResposta(numeroimagen)
         });
       
     
