@@ -255,13 +255,14 @@ let numeroimagen=0;
     
       
 function comprovarResposta(nResposta){
+  reposta = nResposta
   imageID = numeroimagen;
     tomarId()
-    console.log("nResposta"+nResporta);
-  if (preguntas[nResposta][0] == imageID){
+    console.log("nResposta"+reposta);
+  if (preguntas[reposta][0] == imageID){
        document.getElementById("pregunta").innerHTML = "Correcto " + numeroimagen;  
   }else{
-      document.getElementById("pregunta").innerHTML = "Incorrecto " + numeroimagen+" "+preguntas[nResposta][0];  
+      document.getElementById("pregunta").innerHTML = "Incorrecto " + numeroimagen+" "+preguntas[reposta][0];  
   }
 }
 function tomarId(){
