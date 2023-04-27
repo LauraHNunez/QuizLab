@@ -251,7 +251,7 @@ let numeroimagen=0;
               // MARKER IS PRESENT
                numeroimagen=14;
                console.log(numeroimagen);
-               comprovarResposta(numeroimagen);
+               comprovarResposta();
             }
           }
         });
@@ -265,15 +265,15 @@ let numeroimagen=0;
               // MARKER IS PRESENT
                numeroimagen=15;
                console.log(numeroimagen);
-               comprovarResposta(numeroimagen);
+               comprovarResposta();
               }
           }
         });
       
     
       
-function comprovarResposta(nResposta){
-  var resposta=nResposta;
+function comprovarResposta(){
+  var resposta=numeroPregunta;
   imageID = numeroimagen;
    console.log("NumeroImagen"+imageID);
    console.log("NumeroPregunta"+respostes[resposta][0])
