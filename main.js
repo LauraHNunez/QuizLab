@@ -281,11 +281,13 @@ function comprovarResposta(){
        document.getElementById("pregunta").innerHTML = "Correcto " + numeroimagen; 
        ferPregunta()
        document.getElementById("pregunta").innerHTML = preguntas[ferPregunta()][2]
-       const myTimeout = setTimeout(timespace, 5000);
   }else{
       document.getElementById("pregunta").innerHTML = "Incorrecto " + numeroimagen;    
       console.log("Fracaso")
-  } 
+  }
+  
+  const myTimeout = setTimeout(timespace, 5000);
+  document.getElementById("pregunta").innerHTML = "Despacio..."
 }
 
 function timespace(){
