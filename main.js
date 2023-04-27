@@ -278,24 +278,24 @@ function comprovarResposta(){
    console.log("NumeroImagen"+imageID);
    console.log("NumeroPregunta"+respostes[resposta][0])
   if (respostes[resposta] == (""+imageID)){
-       document.getElementById("pregunta").innerHTML = "Correcto " + numeroimagen;  
-       setTimeout(ferPregunta, 50000)
-       document.getElementById("pregunta").innerHTML = preguntas[ferPregunta()][2]
+       document.getElementById("pregunta").innerHTML = "Correcto " + numeroimagen; 
   }else{
       document.getElementById("pregunta").innerHTML = "Incorrecto " + numeroimagen;    
       console.log("Fracaso")
-  }
+  } 
+  setTimeout(ferPregunta, 5000)
 }
 
 
 function ferPregunta(){
   numeroPregunta = Math.floor(Math.random() * 15);
+  document.getElementById("pregunta").innerHTML = preguntas[ferPregunta()][2]
   return numeroPregunta;
 }
 function start(){
   var x = document.getElementById("splash");
   x.style.display = "none";
   preguntas.forEach(e =>{e[2];})
-  document.getElementById("pregunta").innerHTML = preguntas[ferPregunta()][2]
+  ferPregunta()
 }
 setTimeout(start, 6000)
