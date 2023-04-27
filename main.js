@@ -279,7 +279,7 @@ function comprovarResposta(){
    console.log("NumeroPregunta"+respostes[resposta][0])
   if (respostes[resposta] == (""+imageID)){
        document.getElementById("pregunta").innerHTML = "Correcto " + numeroimagen;  
-       setTimeout(ferPregunta, 8000)
+       setTimeout(ferPregunta, 15000)
        document.getElementById("pregunta").innerHTML = preguntas[ferPregunta()][2]
   }else{
       document.getElementById("pregunta").innerHTML = "Incorrecto " + numeroimagen;    
