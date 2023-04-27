@@ -286,11 +286,11 @@ function comprovarResposta(){
       console.log("Fracaso")
   }
   
-  const myTimeout = setTimeout(timespace, 5000);
-  document.getElementById("pregunta").innerHTML = "Despacio..."
+  const myTimeout = setTimeout(timespace, 2000);
 }
 
 function timespace(){
+   document.getElementById("pregunta").innerHTML = preguntas[ferPregunta()][2]
 }
 function ferPregunta(){
   numeroPregunta = Math.floor(Math.random() * 15);
