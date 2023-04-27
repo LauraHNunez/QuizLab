@@ -280,6 +280,7 @@ function comprovarResposta(){
   if (respostes[resposta] == (""+imageID)){
        document.getElementById("pregunta").innerHTML = "Correcto " + numeroimagen;  
        ferPregunta()
+       document.getElementById("pregunta").innerHTML = preguntas[ferPregunta()][2]
   }else{
       document.getElementById("pregunta").innerHTML = "Incorrecto " + numeroimagen;    
       console.log("Fracaso")
