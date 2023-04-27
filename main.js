@@ -281,17 +281,17 @@ function comprovarResposta(){
        document.getElementById("pregunta").innerHTML = "Correcto " + numeroimagen; 
        ferPregunta()
        document.getElementById("pregunta").innerHTML = preguntas[ferPregunta()][2]
+       const myTimeout = setTimeout(timespace, 5000);
   }else{
       document.getElementById("pregunta").innerHTML = "Incorrecto " + numeroimagen;    
       console.log("Fracaso")
   } 
-  setTimeout(ferPregunta, 5000)
 }
 
-
+function timespace(){
+}
 function ferPregunta(){
   numeroPregunta = Math.floor(Math.random() * 15);
-  
   return numeroPregunta;
 }
 function start(){
