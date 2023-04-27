@@ -271,7 +271,15 @@ let numeroimagen=0;
         });
       
     
-      
+function goToCredits()
+{
+    document.getElementById('credits').style.display = 'block';
+}
+
+function returnToMain()
+{
+    document.getElementById('credits').style.display = 'none';
+}
 function comprovarResposta(){
   var resposta=numeroPregunta;
   imageID = numeroimagen;
