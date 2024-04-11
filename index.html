@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barça Women's Quiz</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-0oQ/ZC/bblx28jNNgwW1G8v1jpGwU/xKzqL+sAzrbe3PCPShoHfIZFV9v3nJL4/qR0QkqNJzYP2h4Lu3XP8mIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div id="inicio">
+            <h1>Barça Women's Quiz</h1>
+            <button onclick="startGame()">Start</button>
+        </div>
+        <div id="juego" style="display: none;">
+            <h1>Barça Women's Quiz</h1>
+            <div id="question"></div>
+            <div id="options"></div>
+            <button id="nextButton" onclick="nextQuestion()">Next Question</button>
+        </div>
+        <div id="resultados" style="display: none;">
+            <h1>Results</h1>
+            <div id="result"></div>
+            <button onclick="showCredits()">Show Credits</button>
+        </div>
+        <div id="creditos" style="display: none;">
+            <h1>Credits</h1>
+            <p>Desarrollado por: Laura Hang Núñez</p>
+            <p>Instagram: <a href="mailto:laurahang@gmail.com"><i class="fas fa-envelope"></i> laurahang@gmail.com</a></p>
+            <p>Contacto: <a href="https://www.instagram.com/laura.hang_17/"><i class="fab fa-instagram"></i> laura.hang_17</a></p>
+            
+            
+            <button onclick="restartGame()">Volver al Inicio</button>
+        </div>  
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
