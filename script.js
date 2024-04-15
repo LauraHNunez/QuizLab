@@ -185,7 +185,7 @@ function checkAnswer(selectedOption, correctAnswer) {
             buttons[i].style.backgroundColor = ''; // Reset button color
         }
         nextQuestion();
-    }, 1000); // Adjust the duration as needed
+    }, 500); // Adjust the duration as needed
 }
 
 // Función para pasar a la siguiente pregunta
