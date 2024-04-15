@@ -147,31 +147,24 @@ function displayQuestion(questionIndex) {
     optionsContainer.innerHTML = '';
 
     currentQuestion.options.forEach(option => {
-        const optionDiv = document.createElement('div');
-        optionDiv.classList.add('option');
-        
         const button = document.createElement('button');
         button.textContent = option;
         button.onclick = () => checkAnswer(option, currentQuestion.answer);
-
-        optionDiv.appendChild(button);
-        optionsContainer.appendChild(optionDiv);
+        optionsContainer.appendChild(button);
     });
 }
 
-
-
+// Función para verificar la respuesta seleccionada por el usuario
 function checkAnswer(selectedOption, correctAnswer) {
-    const isCorrect = selectedOption === correctAnswer;
-    if (isCorrect) {
+    if (selectedOption === correctAnswer) {
         correctCount++;
     } else {
         incorrectCount++;
     }
-    displayFeedback(isCorrect);
+    nextQuestion();
 }
 
-
+// Función para pasar a la siguiente pregunta
 function nextQuestion() {
     if (currentQuestionIndex < shuffledQuestions.length - 1) {
         currentQuestionIndex++;
@@ -186,16 +179,26 @@ function showResults() {
     document.getElementById('juego').style.display = 'none';
     document.getElementById('resultados').style.display = 'block';
     const totalQuestions = shuffledQuestions.length;
-    const percentageCorrect = (correctCount / totalQuestions) * 100;
+    const percentageCorrect = ((correctCount / totalQuestions) * 100).toFixed(2);
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = `
         <h2>Resultados:</h2>
         <p>Respuestas Correctas: ${correctCount}</p>
-        <p>Respuestas Incorrectas: ${incorrectCount}</p>
-        <p>Porcentaje de Aciertos: ${percentageCorrect.toFixed(2)}%</p>
+        <p>Porcentaje de Aciertos: ${percentageCorrect}%</p>
+        <h3>Respuestas:</h3>
     `;
+    
+    // Iterate through each question to display correct and user's answers
+    shuffledQuestions.forEach((question, index) => {
+        const userAnswer = question.options.find(option => option === userAnswers[index]);
+        const isCorrect = userAnswer === question.answer;
+        const questionResult = document.createElement('p');
+        questionResult.textContent = `Pregunta ${index + 1}: ${
+            isCorrect ? 'Correcta' : 'Incorrecta'
+        } - Respuesta correcta: ${question.answer}, Tu respuesta: ${userAnswer || 'No respondida'}`;
+        resultDiv.appendChild(questionResult);
+    });
 }
-
 
 // Funciones para controlar el inicio y fin del juego, y mostrar los créditos
 function startGame() {
