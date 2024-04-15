@@ -162,25 +162,23 @@ function checkAnswer(selectedOption, correctAnswer) {
     // Highlight the selected option
     for (let i = 0; i < buttons.length; i++) {
         if (buttons[i].textContent === selectedOption) {
-            buttons[i].style.backgroundColor = '#f0f0f0'; // Change to your desired color
+            buttons[i].style.backgroundColor = selectedOption === correctAnswer ? '#7FFF7F' : '#FF7F7F'; // Green for correct, red for incorrect
         }
         buttons[i].disabled = true; // Disable all buttons to prevent further selection
     }
 
-    // Wait for a short duration before checking the answer
+    // Show if the answer is correct or not
+    const resultMessage = selectedOption === correctAnswer ? '¡Respuesta correcta!' : 'Respuesta incorrecta';
+    document.getElementById('result-message').textContent = resultMessage;
+
+    // Wait for a short duration before moving to the next question
     setTimeout(() => {
         for (let i = 0; i < buttons.length; i++) {
             buttons[i].style.backgroundColor = ''; // Reset button color
         }
-        if (selectedOption === correctAnswer) {
-            correctCount++;
-        } else {
-            incorrectCount++;
-        }
         nextQuestion();
     }, 1000); // Adjust the duration as needed
 }
-
 // Función para pasar a la siguiente pregunta
 function nextQuestion() {
     if (currentQuestionIndex < shuffledQuestions.length - 1) {
