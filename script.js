@@ -147,11 +147,16 @@ function displayQuestion(questionIndex) {
     optionsContainer.innerHTML = '';
 
     currentQuestion.options.forEach(option => {
-        const button = document.createElement('button');
-        button.textContent = option;
-        button.onclick = () => checkAnswer(option, currentQuestion.answer);
-        optionsContainer.appendChild(button);
+        const optionDiv = document.createElement('div'); // Cambiamos de <button> a <div>
+        optionDiv.textContent = option;
+        optionDiv.onclick = () => checkAnswer(option, currentQuestion.answer);
+        optionsContainer.appendChild(optionDiv);
     });
+
+    // Establecer un temporizador para pasar a la siguiente pregunta después de 30 segundos
+    setTimeout(() => {
+        nextQuestion();
+    }, 30000); // 30 segundos en milisegundos
 }
 
 // Función para verificar la respuesta seleccionada por el usuario
