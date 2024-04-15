@@ -33,3 +33,11 @@ button {
     padding: 10px 20px;
     background-color: #007bff;
 }
+
+.option {
+    border: 1px solid #ccc; /* Añade un borde gris */
+    padding: 10px; /* Añade relleno para separar el texto del borde */
+    margin-bottom: 10px; /* Añade un espacio entre cada opción de respuesta */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la opción */
+}
+
