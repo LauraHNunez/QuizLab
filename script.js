@@ -178,26 +178,12 @@ function nextQuestion() {
 function showResults() {
     document.getElementById('juego').style.display = 'none';
     document.getElementById('resultados').style.display = 'block';
-    const totalQuestions = shuffledQuestions.length;
-    const percentageCorrect = ((correctCount / totalQuestions) * 100).toFixed(2);
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = `
         <h2>Resultados:</h2>
         <p>Respuestas Correctas: ${correctCount}</p>
-        <p>Porcentaje de Aciertos: ${percentageCorrect}%</p>
-        <h3>Respuestas:</h3>
+        <p>Respuestas Incorrectas: ${incorrectCount}</p>
     `;
-    
-    // Iterate through each question to display correct and user's answers
-    shuffledQuestions.forEach((question, index) => {
-        const userAnswer = question.options.find(option => option === userAnswers[index]);
-        const isCorrect = userAnswer === question.answer;
-        const questionResult = document.createElement('p');
-        questionResult.textContent = `Pregunta ${index + 1}: ${
-            isCorrect ? 'Correcta' : 'Incorrecta'
-        } - Respuesta correcta: ${question.answer}, Tu respuesta: ${userAnswer || 'No respondida'}`;
-        resultDiv.appendChild(questionResult);
-    });
 }
 
 // Funciones para controlar el inicio y fin del juego, y mostrar los créditos
