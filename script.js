@@ -160,37 +160,26 @@ function displayQuestion(questionIndex) {
 }
 
 
-let canProceed = false; // Variable to control whether the user can proceed to the next question
 
 function checkAnswer(selectedOption, correctAnswer) {
-    if (!canProceed) { // Check if the user can proceed to the next question
-        const isCorrect = selectedOption === correctAnswer;
-        if (isCorrect) {
-            correctCount++;
-        } else {
-            incorrectCount++;
-        }
-        displayFeedback(isCorrect);
-        canProceed = true; // Allow the user to proceed to the next question
+    const isCorrect = selectedOption === correctAnswer;
+    if (isCorrect) {
+        correctCount++;
+    } else {
+        incorrectCount++;
     }
+    displayFeedback(isCorrect);
 }
 
+
 function nextQuestion() {
-    if (canProceed && currentQuestionIndex < shuffledQuestions.length - 1) {
+    if (currentQuestionIndex < shuffledQuestions.length - 1) {
         currentQuestionIndex++;
         displayQuestion(currentQuestionIndex);
-        canProceed = false; // Reset the variable to prevent immediate next question
-    } else if (canProceed) {
+    } else {
         showResults();
     }
 }
-
-function displayFeedback(isCorrect) {
-    const feedbackDiv = document.getElementById('feedback');
-    feedbackDiv.textContent = isCorrect ? '¡Respuesta Correcta!' : 'Respuesta Incorrecta';
-    setTimeout(nextQuestion, 1000); // Move to the next question after 1 second
-}
-
 
 // Función para mostrar los resultados al finalizar todas las preguntas
 function showResults() {
