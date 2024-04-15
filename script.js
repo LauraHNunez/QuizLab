@@ -31,7 +31,7 @@ const questions = [
     },
     {
         question: "¿Donde se jugarà la final de la champions femenina de 2025?",
-        options: ["Londres", "Lisboa", "París", "Malmö"],
+        options: ["Lisboa", "Paris", "Londres", "San Mamés"],
         answer: "Lisboa"
     },
     {
@@ -50,9 +50,9 @@ const questions = [
         answer: "Heinenoord"
     },
     {
-        question: "¿Quién és el director deportivo del barça femenino?",
-        options: ["Markel Zubizarreta", "Xavi Puig", "Deco", "Joan Laporta"],
-        answer: "Xavi Puig"
+        question: "¿Quién és el director deportivo del Barça femenino?",
+        options: ["Deco", "Markel Zubizarreta", "Xavier Puig", "Joan Laporta"],
+        answer: "Xavier Puig"
     },
     {
         question: "¿Contra qué equipo el Barça perdió en Turín?",
@@ -147,53 +147,36 @@ function displayQuestion(questionIndex) {
     optionsContainer.innerHTML = '';
 
     currentQuestion.options.forEach(option => {
-        const optionDiv = document.createElement('div'); // Cambiamos de <button> a <div>
-        optionDiv.textContent = option;
-        optionDiv.className = 'option'; // Agregamos la clase 'option'
-        optionDiv.onclick = () => checkAnswer(option, currentQuestion.answer);
+        const optionDiv = document.createElement('div');
+        optionDiv.classList.add('option');
+        
+        const button = document.createElement('button');
+        button.textContent = option;
+        button.onclick = () => checkAnswer(option, currentQuestion.answer);
+
+        optionDiv.appendChild(button);
         optionsContainer.appendChild(optionDiv);
     });
-
-    // Establecer un temporizador para pasar a la siguiente pregunta después de 30 segundos
-    setTimeout(() => {
-        nextQuestion();
-    }, 30000); // 30 segundos en milisegundos
 }
 
 
 // Función para verificar la respuesta seleccionada por el usuario
 function checkAnswer(selectedOption, correctAnswer) {
-    const optionsContainer = document.getElementById('options');
-    const buttons = optionsContainer.getElementsByTagName('button');
-
-    // Disable all buttons to prevent further selection
-    for (let i = 0; i < buttons.length; i++) {
-        buttons[i].disabled = true;
+    const isCorrect = selectedOption === correctAnswer;
+    if (isCorrect) {
+        correctCount++;
+    } else {
+        incorrectCount++;
     }
-
-    // Highlight the selected option and display if it is correct or not
-    for (let i = 0; i < buttons.length; i++) {
-        if (buttons[i].textContent === selectedOption) {
-            if (selectedOption === correctAnswer) {
-                buttons[i].style.backgroundColor = '#7FFF7F'; // Green for correct answer
-                document.getElementById('result-message').textContent = '¡Respuesta correcta!';
-                correctCount++;
-            } else {
-                buttons[i].style.backgroundColor = '#FF7F7F'; // Red for incorrect answer
-                document.getElementById('result-message').textContent = 'Respuesta incorrecta';
-                incorrectCount++;
-            }
-        }
-    }
-
-    // Wait for a short duration before moving to the next question
-    setTimeout(() => {
-        for (let i = 0; i < buttons.length; i++) {
-            buttons[i].style.backgroundColor = ''; // Reset button color
-        }
-        nextQuestion();
-    }, 500); // Adjust the duration as needed
+    displayFeedback(isCorrect);
 }
+
+function displayFeedback(isCorrect) {
+    const feedbackDiv = document.getElementById('feedback');
+    feedbackDiv.textContent = isCorrect ? '¡Respuesta Correcta!' : 'Respuesta Incorrecta';
+    setTimeout(nextQuestion, 1000); // Move to the next question after 1 second
+}
+
 
 // Función para pasar a la siguiente pregunta
 function nextQuestion() {
@@ -201,20 +184,22 @@ function nextQuestion() {
         currentQuestionIndex++;
         displayQuestion(currentQuestionIndex);
     } else {
-        showResults(); // Llamamos a showResults() cuando se hayan respondido todas las preguntas
+        showResults();
     }
 }
 
 // Función para mostrar los resultados al finalizar todas las preguntas
 function showResults() {
-    const totalQuestions = shuffledQuestions.length;
-    const percentageCorrect = (correctCount / totalQuestions) * 100;
     document.getElementById('juego').style.display = 'none';
     document.getElementById('resultados').style.display = 'block';
+    const totalQuestions = shuffledQuestions.length;
+    const percentageCorrect = (correctCount / totalQuestions) * 100;
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = `
-        <p>Porcentaje de respuestas correctas: ${percentageCorrect.toFixed(2)}%</p>
-        <p>Respuestas correctas: ${correctCount} de ${totalQuestions}</p>
+        <h2>Resultados:</h2>
+        <p>Respuestas Correctas: ${correctCount}</p>
+        <p>Respuestas Incorrectas: ${incorrectCount}</p>
+        <p>Porcentaje de Aciertos: ${percentageCorrect.toFixed(2)}%</p>
     `;
 }
 
