@@ -13,14 +13,6 @@ h1 {
     color: #000000;
 }
 
-button {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #0077ff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
 
 #nextButton {
     margin-top: 20px;
