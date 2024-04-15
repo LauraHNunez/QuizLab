@@ -205,14 +205,17 @@ function nextQuestion() {
 
 // Función para mostrar los resultados al finalizar todas las preguntas
 function showResults() {
+    const totalQuestions = shuffledQuestions.length;
+    const percentageCorrect = (correctCount / totalQuestions) * 100;
     document.getElementById('juego').style.display = 'none';
     document.getElementById('resultados').style.display = 'block';
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = `
-        <p>Respuestas Correctas: ${correctCount}</p>
-        <p>Respuestas Incorrectas: ${incorrectCount}</p>
+        <p>Porcentaje de respuestas correctas: ${percentageCorrect.toFixed(2)}%</p>
+        <p>Respuestas correctas: ${correctCount} de ${totalQuestions}</p>
     `;
 }
+
 
 // Funciones para controlar el inicio y fin del juego, y mostrar los créditos
 function startGame() {
