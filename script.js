@@ -201,7 +201,7 @@ function nextQuestion() {
 // Función para mostrar los resultados al finalizar todas las preguntas
 function showResults() {
     document.getElementById('juego').style.display = 'none';
-    document.getElementById('resultados').style.display = 'block';
+    document.getElementById('result').style.display = 'block';
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = `
         <p>Respuestas Correctas: ${correctCount}</p>
