@@ -160,15 +160,29 @@ function displayQuestion(questionIndex) {
 }
 
 
-// Función para verificar la respuesta seleccionada por el usuario
+let canProceed = false; // Variable to control whether the user can proceed to the next question
+
 function checkAnswer(selectedOption, correctAnswer) {
-    const isCorrect = selectedOption === correctAnswer;
-    if (isCorrect) {
-        correctCount++;
-    } else {
-        incorrectCount++;
+    if (!canProceed) { // Check if the user can proceed to the next question
+        const isCorrect = selectedOption === correctAnswer;
+        if (isCorrect) {
+            correctCount++;
+        } else {
+            incorrectCount++;
+        }
+        displayFeedback(isCorrect);
+        canProceed = true; // Allow the user to proceed to the next question
     }
-    displayFeedback(isCorrect);
+}
+
+function nextQuestion() {
+    if (canProceed && currentQuestionIndex < shuffledQuestions.length - 1) {
+        currentQuestionIndex++;
+        displayQuestion(currentQuestionIndex);
+        canProceed = false; // Reset the variable to prevent immediate next question
+    } else if (canProceed) {
+        showResults();
+    }
 }
 
 function displayFeedback(isCorrect) {
@@ -177,16 +191,6 @@ function displayFeedback(isCorrect) {
     setTimeout(nextQuestion, 1000); // Move to the next question after 1 second
 }
 
-
-// Función para pasar a la siguiente pregunta
-function nextQuestion() {
-    if (currentQuestionIndex < shuffledQuestions.length - 1) {
-        currentQuestionIndex++;
-        displayQuestion(currentQuestionIndex);
-    } else {
-        showResults();
-    }
-}
 
 // Función para mostrar los resultados al finalizar todas las preguntas
 function showResults() {
