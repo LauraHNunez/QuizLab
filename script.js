@@ -149,6 +149,7 @@ function displayQuestion(questionIndex) {
     currentQuestion.options.forEach(option => {
         const optionDiv = document.createElement('div'); // Cambiamos de <button> a <div>
         optionDiv.textContent = option;
+        optionDiv.className = 'option'; // Agregamos la clase 'option'
         optionDiv.onclick = () => checkAnswer(option, currentQuestion.answer);
         optionsContainer.appendChild(optionDiv);
     });
@@ -158,6 +159,7 @@ function displayQuestion(questionIndex) {
         nextQuestion();
     }, 30000); // 30 segundos en milisegundos
 }
+
 
 // Función para verificar la respuesta seleccionada por el usuario
 function checkAnswer(selectedOption, correctAnswer) {
