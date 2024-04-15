@@ -35,9 +35,15 @@ button {
 }
 
 .option {
-    border: 1px solid #ccc; /* Añade un borde gris */
-    padding: 10px; /* Añade relleno para separar el texto del borde */
-    margin-bottom: 10px; /* Añade un espacio entre cada opción de respuesta */
-    cursor: pointer; /* Cambia el cursor al pasar sobre la opción */
+    border: 1px solid #ccc; /* Add a gray border */
+    padding: 10px; /* Add padding to separate text from border */
+    margin-bottom: 10px; /* Add space between each answer option */
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    background-color: #2532F4; /* Add white background color */
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
 }
 
+.option:hover {
+    background-color: #E266DE; /* Change background color on hover */
+}
