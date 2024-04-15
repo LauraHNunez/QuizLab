@@ -31,8 +31,8 @@ const questions = [
     },
     {
         question: "¿Donde se jugarà la final de la champions femenina de 2025?",
-        options: ["91.650", "91.648", "91.553", "91.618"],
-        answer: "91.648"
+        options: ["Londres", "Lisboa", "París", "Malmö"],
+        answer: "Lisboa"
     },
     {
         question: "¿En que equipo juega el hermano de Jana Fernández?",
@@ -50,19 +50,14 @@ const questions = [
         answer: "Heinenoord"
     },
     {
-        question: "¿Quién fue la 1ª capitana del barça el año que ganaron la Champions de Gotemburgo?",
-        options: ["Vicky Losada", "Alexia Putellas", "Laura Ràfols", "Marta Torrejón"],
-        answer: "Vicky Losada"
+        question: "¿Quién és el director deportivo del barça femenino?",
+        options: ["Markel Zubizarreta", "Xavi Puig", "Deco", "Joan Laporta"],
+        answer: "Xavi Puig"
     },
     {
         question: "¿Contra qué equipo el Barça perdió en Turín?",
         options: ["Real Madrid", "Olympique Lyon", "PSG", "Wolfsburg"],
         answer: "Olympique Lyon"
-    },
-    {
-        question: "¿Donde nació Esmee Brugts?",
-        options: ["Ámsterdam", "Heinenoord", "Valkenswaard", "Hoogeveen"],
-        answer: "Heinenoord"
     },
     {
         question: "¿Que otro deporte hizo Sandra Paños antes de jugar a Fútbol?",
@@ -80,7 +75,7 @@ const questions = [
         answer: "Jana y Hansen"
     },
     {
-        question: "¿A que edad Debutó Vicky Lopex en la Champions?",
+        question: "¿A que edad Debutó Vicky Lopez en la Champions?",
         options: ["15 años y 148 días", "16 años y 148 días", "16 años y 138 días", "16 años y 248 días"],
         answer: "16 años y 148 días"
     },
