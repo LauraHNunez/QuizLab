@@ -33,15 +33,3 @@ button {
     padding: 10px 20px;
     background-color: #007bff;
 }
-
-.option {
-    padding: 10px; /* Add padding to separate text from border */
-    margin-bottom: 10px; /* Add space between each answer option */
-    cursor: pointer; /* Change cursor on hover */
-    background-color: #2532F4; /* Add white background color */
-    transition: background-color 0.3s ease; /* Add transition for hover effect */
-}
-
-.option:hover {
-    background-color: #E266DE; /* Change background color on hover */
-}
