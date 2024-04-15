@@ -41,7 +41,7 @@ const questions = [
     },
     {
         question: "¿Contra qué equipo logro el Barça el máximo récord de asistencia?",
-        options: ["Real Madrid", "Olympique Lyon", "PSH", "Wolfsburg"],
+        options: ["Real Madrid", "Olympique Lyon", "PSG", "Wolfsburg"],
         answer: "Wolfsburg"
     },
     {
@@ -118,6 +118,41 @@ const questions = [
         question: "¿Quien marcó el gol que eliminó al Barça en las semifinales de la Champions 2019-2020?",
         options: ["Ingrid Engen", "Pernille Harder", "Fridolina Rolfö", "Alexandra Popp"],
         answer: "Fridolina Rolfö"
+    },
+    {
+        question: "¿En que año llegó Mapi al Barça?",
+        options: ["2014", "2016","2015", "2017"],
+        answer: "2017"
+    },
+    {
+        question: "¿En que año nació Giuglia Dragoni?",
+        options: ["2004", "2007", "2006", "2005"],
+        answer: "2006"
+    },
+    {
+        question: "¿En su primera temporada como culè, que titulo no gano Keira con el Barça?",
+        options: ["Supercopa España", "Copa de la Reina", "Liga", "Champions League"],
+        answer: "Copa de la Reina"
+    },
+    {
+        question: "¿Como se llama el grupo de WhatsApp entre Leah, Keira, Georgia y Lucy?",
+        options: ["The 3 best Friends & Lucy", "Lucy's Angels", "The 3 musketeers and Lucy", "The fantastic four"],
+        answer: "The 3 best Friends & Lucy"
+    },
+    {
+        question: "¿En que año nació ?",
+        options: ["2004", "2007", "2006", "2005"],
+        answer: "2006"
+    },
+    {
+        question: "¿En su primera temporada como culè, que titulo no gano Keira con el Barça?",
+        options: ["Supercopa España", "Copa de la Reina", "Liga", "Champions League"],
+        answer: "Copa de la Reina"
+    },
+    {
+        question: "¿Como se llama el grupo de WhatsApp entre Leah, Keira, Georgia y Lucy?",
+        options: ["The 3 best Friends & Lucy", "Lucy's Angels", "The 3 musketeers and Lucy", "The fantastic four"],
+        answer: "The 3 best Friends & Lucy"
     }
 ];
 
