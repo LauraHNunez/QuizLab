@@ -13,6 +13,14 @@ h1 {
     color: #000000;
 }
 
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #2532F4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
 
 #nextButton {
     margin-top: 20px;
@@ -27,11 +35,9 @@ h1 {
 }
 
 .option {
-    border: 1px solid #ccc; /* Add a gray border */
     padding: 10px; /* Add padding to separate text from border */
     margin-bottom: 10px; /* Add space between each answer option */
     cursor: pointer; /* Change cursor on hover */
-    border-radius: 5px; /* Add border radius for rounded corners */
     background-color: #2532F4; /* Add white background color */
     transition: background-color 0.3s ease; /* Add transition for hover effect */
 }
