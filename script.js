@@ -159,17 +159,23 @@ function checkAnswer(selectedOption, correctAnswer) {
     const optionsContainer = document.getElementById('options');
     const buttons = optionsContainer.getElementsByTagName('button');
 
-    // Highlight the selected option
+    // Disable all buttons to prevent further selection
     for (let i = 0; i < buttons.length; i++) {
-        if (buttons[i].textContent === selectedOption) {
-            buttons[i].style.backgroundColor = selectedOption === correctAnswer ? '#7FFF7F' : '#FF7F7F'; // Green for correct, red for incorrect
-        }
-        buttons[i].disabled = true; // Disable all buttons to prevent further selection
+        buttons[i].disabled = true;
     }
 
-    // Show if the answer is correct or not
-    const resultMessage = selectedOption === correctAnswer ? '¡Respuesta correcta!' : 'Respuesta incorrecta';
-    document.getElementById('result-message').textContent = resultMessage;
+    // Highlight the selected option and display if it is correct or not
+    for (let i = 0; i < buttons.length; i++) {
+        if (buttons[i].textContent === selectedOption) {
+            if (selectedOption === correctAnswer) {
+                buttons[i].style.backgroundColor = '#7FFF7F'; // Green for correct answer
+                document.getElementById('result-message').textContent = '¡Respuesta correcta!';
+            } else {
+                buttons[i].style.backgroundColor = '#FF7F7F'; // Red for incorrect answer
+                document.getElementById('result-message').textContent = 'Respuesta incorrecta';
+            }
+        }
+    }
 
     // Wait for a short duration before moving to the next question
     setTimeout(() => {
@@ -179,6 +185,7 @@ function checkAnswer(selectedOption, correctAnswer) {
         nextQuestion();
     }, 1000); // Adjust the duration as needed
 }
+
 // Función para pasar a la siguiente pregunta
 function nextQuestion() {
     if (currentQuestionIndex < shuffledQuestions.length - 1) {
