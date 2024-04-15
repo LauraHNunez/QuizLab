@@ -170,9 +170,11 @@ function checkAnswer(selectedOption, correctAnswer) {
             if (selectedOption === correctAnswer) {
                 buttons[i].style.backgroundColor = '#7FFF7F'; // Green for correct answer
                 document.getElementById('result-message').textContent = '¡Respuesta correcta!';
+                correctCount++;
             } else {
                 buttons[i].style.backgroundColor = '#FF7F7F'; // Red for incorrect answer
                 document.getElementById('result-message').textContent = 'Respuesta incorrecta';
+                incorrectCount++;
             }
         }
     }
