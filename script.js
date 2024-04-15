@@ -156,12 +156,29 @@ function displayQuestion(questionIndex) {
 
 // Función para verificar la respuesta seleccionada por el usuario
 function checkAnswer(selectedOption, correctAnswer) {
-    if (selectedOption === correctAnswer) {
-        correctCount++;
-    } else {
-        incorrectCount++;
+    const optionsContainer = document.getElementById('options');
+    const buttons = optionsContainer.getElementsByTagName('button');
+
+    // Highlight the selected option
+    for (let i = 0; i < buttons.length; i++) {
+        if (buttons[i].textContent === selectedOption) {
+            buttons[i].style.backgroundColor = '#f0f0f0'; // Change to your desired color
+        }
+        buttons[i].disabled = true; // Disable all buttons to prevent further selection
     }
-    nextQuestion();
+
+    // Wait for a short duration before checking the answer
+    setTimeout(() => {
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].style.backgroundColor = ''; // Reset button color
+        }
+        if (selectedOption === correctAnswer) {
+            correctCount++;
+        } else {
+            incorrectCount++;
+        }
+        nextQuestion();
+    }, 1000); // Adjust the duration as needed
 }
 
 // Función para pasar a la siguiente pregunta
