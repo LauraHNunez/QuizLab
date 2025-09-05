@@ -51,8 +51,8 @@ const questions = [
     },
     {
         question: "¿Quién és el director deportivo del Barça femenino?",
-        options: ["Deco", "Markel Zubizarreta", "Xavier Puig", "Joan Laporta"],
-        answer: "Xavier Puig"
+        options: ["Deco", "Markel Zubizarreta", "Xavier Puig", "Marc Vives"],
+        answer: "Marc Vives"
     },
     {
         question: "¿Contra qué equipo el Barça perdió en Turín?",
@@ -153,6 +153,46 @@ const questions = [
         question: "¿Como se llama el grupo de WhatsApp entre Leah, Keira, Georgia y Lucy?",
         options: ["The 3 best Friends & Lucy", "Lucy's Angels", "The 3 musketeers and Lucy", "The fantastic four"],
         answer: "The 3 best Friends & Lucy"
+    },
+    {
+        question: "¿En que año ganó España su primer munidal?",
+        options: ["1999", "2023","2015", "2019"],
+        answer: "2023"
+    },
+    {
+        question: "¿Que ex-jugadora culé esta jugando en el club Tigres Femenil (2024/25)?",
+        options: ["Andrea Pereira", "Sandra Paños", "Bruna Vilamala", "Jennifer Hermoso"],
+        answer: "Jennifer Hermoso"
+    },
+    {
+        question: "¿Que jugadora mitica estadounidense llevaba el dorsal 13?",
+        options: ["Tobin Heath", "Alex Morgan", "Kelley O'Hara", "Megan Rapinoe"],
+        answer: "Alex Morgan"
+    },
+    {
+        question: "¿A que 2 jugadoras del Arsenal se les denominaba LW2?",
+        options: ["Lia Walti y Leah Williamson", "Lia Walti & Laura Weinroither", "Laura Weinroither & Leah Williamson"],
+        answer: "Lia Walti y Leah Williamson"
+    },
+    {
+        question: "¿En que equipo juega Esther Gonzalez?",
+        options: ["San Diego Waves", "Real Madrid", "NY Gotham FC", "Orlando Pride"],
+        answer: "NY Gotham FC"
+    },
+    {
+        question: "¿Jana Fernandez en la temporada 25/26 deja el barça y se va al...?",
+        options: ["Chelsea FC", "Arsenal FC", "Mancheser City", "London City Lionesses"],
+        answer: "London City Lionesses"
+    },
+    {
+        question: "¿Cuantos fichajes se hicieron la temporada  25/26?",
+        options: ["3", "Ninguno", "2", "1"],
+        answer: "1"
+    },
+    {
+        question: "¿Cuando se inauguró el estadio Johan Cruyff?",
+        options: ["27 de Agosto de 2019", "25 de Mayo de 2021", "20 de Abril de 2015", "11 de Noviembre de 2011"],
+        answer: "27 de Agosto de 2019"
     }
 ];
 
