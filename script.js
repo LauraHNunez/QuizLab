@@ -140,9 +140,9 @@ const questions = [
         answer: "The 3 best Friends & Lucy"
     },
     {
-        question: "¿En que año nació ?",
-        options: ["2004", "2007", "2006", "2005"],
-        answer: "2006"
+        question: "¿En que año nació Kika Nazareth?",
+        options: ["2004", "2002", "2006", "2005"],
+        answer: "2002"
     },
     {
         question: "¿En su primera temporada como culè, que titulo no gano Keira con el Barça?",
